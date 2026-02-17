@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd favicon, email collection, and social media meta tags\n\n- Add favicon \\(fabicon.png\\) to website\n- Implement email collection with Google Sheets integration\n- Add success popup after email submission\n- Add Open Graph and Twitter Card meta tags for social sharing\n- Add thumbnail image for social media previews\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
+    ]
+  },
+  "spinnerTipsEnabled": true
+}

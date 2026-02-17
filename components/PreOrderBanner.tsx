@@ -19,23 +19,20 @@ const PreOrderBanner: React.FC = () => {
     setError('');
 
     try {
-      const formData = new FormData();
-      formData.append('email', email);
+      const url = 'https://script.google.com/macros/s/AKfycbwFDVOy4tEI-RvTywbxbumjvO-wwYfTEBWk3MhuwA--EJxNJ9gPypYMyKkETQlZZJsVcA/exec';
 
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwFDVOy4tEI-RvTywbxbumjvO-wwYfTEBWk3MhuwA--EJxNJ9gPypYMyKkETQlZZJsVcA/exec', {
-        method: 'POST',
-        body: formData,
+      const response = await fetch(url + '?email=' + encodeURIComponent(email), {
+        method: 'GET',
+        mode: 'no-cors',
       });
 
-      if (response.ok) {
-        setShowPopup(true);
-        setEmail('');
-        setTimeout(() => setShowPopup(false), 5000);
-      } else {
-        setError('Something went wrong. Please try again.');
-      }
+      // With no-cors, we can't read the response, so assume success
+      setShowPopup(true);
+      setEmail('');
+      setTimeout(() => setShowPopup(false), 5000);
     } catch (err) {
-      setError('Failed to submit. Please check your connection.');
+      console.error('Submission error:', err);
+      setError('Failed to submit. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
