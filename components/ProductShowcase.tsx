@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductShowcase: React.FC = () => {
   return (
-    <section id="app" className="bg-[#050505] py-20 border-t border-white/5">
+    <section id="technology" className="bg-[#050505] py-20 border-t border-white/5">
       {/* SECTION 1: HARDWARE */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-32">
          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-white/10 pb-8">

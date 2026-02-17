@@ -39,7 +39,7 @@ const PreOrderBanner: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-[#050505] relative overflow-hidden">
+    <section id="join" className="py-24 bg-[#050505] relative overflow-hidden">
       {/* Subtle glow background */}
       <div className="absolute inset-0 bg-gradient-to-t from-orange-500/5 to-transparent pointer-events-none" />
 

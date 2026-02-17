@@ -9,22 +9,24 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 items-center">
         {/* Logo */}
         <div className="flex items-center justify-start">
-          <span className="text-xl font-bold tracking-widest text-white">APEX</span>
+          <a href="https://www.apex-focus.com/" className="text-xl font-bold tracking-widest text-white hover:opacity-80 transition-opacity">
+            APEX
+          </a>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center justify-center gap-8">
           <a href="#vision" className="text-xs font-mono text-neutral-400 hover:text-white transition-colors tracking-widest whitespace-nowrap">[ VISION ]</a>
-          <a href="#technology" className="text-xs font-mono text-neutral-400 hover:text-white transition-colors tracking-widest whitespace-nowrap">[ TECHNOLOGY ]</a>
-          <a href="#app" className="text-xs font-mono text-neutral-400 hover:text-white transition-colors tracking-widest whitespace-nowrap">[ SOFTWARE ]</a>
+          <a href="#technology" className="text-xs font-mono text-neutral-400 hover:text-white transition-colors tracking-widest whitespace-nowrap">[ PRODUCT ]</a>
+          <a href="#join" className="text-xs font-mono text-neutral-400 hover:text-white transition-colors tracking-widest whitespace-nowrap">[ JOIN ]</a>
         </div>
 
         {/* CTA */}
         <div className="flex items-center justify-end gap-4">
-          <button className="hidden md:block group relative px-6 py-2 text-xs font-mono tracking-widest overflow-hidden border border-white/20 rounded-full hover:border-white/60 transition-colors">
+          <a href="#join" className="hidden md:block group relative px-6 py-2 text-xs font-mono tracking-widest overflow-hidden border border-white/20 rounded-full hover:border-white/60 transition-colors">
             <span className="relative z-10 group-hover:text-black transition-colors">JOIN WAITLIST</span>
             <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-          </button>
+          </a>
 
            {/* Mobile Toggle */}
           <button 
@@ -40,8 +42,8 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="absolute top-full left-0 right-0 bg-[#050505] border-b border-white/10 z-40 p-6 flex flex-col gap-6 md:hidden">
           <a href="#vision" className="text-lg font-mono text-neutral-300" onClick={() => setIsOpen(false)}>[ VISION ]</a>
-          <a href="#technology" className="text-lg font-mono text-neutral-300" onClick={() => setIsOpen(false)}>[ TECHNOLOGY ]</a>
-          <a href="#app" className="text-lg font-mono text-neutral-300" onClick={() => setIsOpen(false)}>[ SOFTWARE ]</a>
+          <a href="#technology" className="text-lg font-mono text-neutral-300" onClick={() => setIsOpen(false)}>[ PRODUCT ]</a>
+          <a href="#join" className="text-lg font-mono text-neutral-300" onClick={() => setIsOpen(false)}>[ JOIN ]</a>
         </div>
       )}
     </nav>

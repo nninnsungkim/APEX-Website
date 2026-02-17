@@ -33,10 +33,10 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex items-center gap-4 animate-fade-in-up delay-200">
-            <button className="flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 backdrop-blur-md rounded-sm transition-all group">
+            <a href="#join" className="flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 backdrop-blur-md rounded-sm transition-all group">
               <span className="text-xs font-mono tracking-widest text-white">DISCOVER APEX</span>
               <ArrowRight size={14} className="text-white group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             <a href="#vision" className="text-xs font-mono text-neutral-500 hover:text-white transition-colors tracking-widest px-4">
               [ LEARN MORE ]
             </a>

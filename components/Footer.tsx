@@ -17,26 +17,26 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-[10px] font-mono text-neutral-500 tracking-widest mb-6 uppercase">Product</h4>
           <ul className="space-y-4">
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Hardware</a></li>
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Software</a></li>
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Science</a></li>
+            <li><a href="#technology" className="text-sm text-neutral-400 hover:text-white transition-colors">Hardware</a></li>
+            <li><a href="#technology" className="text-sm text-neutral-400 hover:text-white transition-colors">Software</a></li>
+            <li><a href="#vision" className="text-sm text-neutral-400 hover:text-white transition-colors">Science</a></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-[10px] font-mono text-neutral-500 tracking-widest mb-6 uppercase">Company</h4>
           <ul className="space-y-4">
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">About Us</a></li>
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Careers</a></li>
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Contact</a></li>
+            <li><span className="text-sm text-neutral-600 cursor-not-allowed">About Us</span></li>
+            <li><span className="text-sm text-neutral-600 cursor-not-allowed">Careers</span></li>
+            <li><a href="#join" className="text-sm text-neutral-400 hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
 
         <div>
            <h4 className="text-[10px] font-mono text-neutral-500 tracking-widest mb-6 uppercase">Legal</h4>
            <ul className="space-y-4">
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Terms of Service</a></li>
+            <li><span className="text-sm text-neutral-600 cursor-not-allowed">Privacy Policy</span></li>
+            <li><span className="text-sm text-neutral-600 cursor-not-allowed">Terms of Service</span></li>
            </ul>
         </div>
       </div>
